@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header .top-bar {
+    display: flex;
+    justify-content: center;
+    background: #003366;
+    padding: 0.625rem 0;
+}
+
+header .top-bar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+    display: inline-block;
+}
+
+header .top-bar a:hover,
+header .top-bar a.active {
+    background: #6cbf39;
+    color: #003366;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1.25rem 1.25rem;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #003366;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    padding: 0.625rem 0.938rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #6cbf39;
+    border-bottom: 0.125rem solid #6cbf39;
+}
+
+.home {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.25rem 0;
+}
+
+.service {
+    flex: 1 1 calc(33.333% - 1.25rem);
+    margin: 0.625rem;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.service a {
+    display: block;
+    background: #003366;
+    color: #fff;
+    padding: 0.625rem;
+    text-decoration: none;
+}
+
+.service a:hover {
+    background: #6cbf39;
+}
+
+.content {
+    margin: 1.25rem 0;
+    padding: 0 1.25rem;
+}
+
+.content-block {
+    margin-bottom: 2.5rem;
+}
+
+.content-block h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 0.625rem;
+}
+
+.content-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-inner img {
+    width: 40%;
+    height: auto;
+}
+
+.content-text {
+    flex: 1;
+    padding-left: 1.25rem;
+}
+
+.content-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.content-block a {
+    color: #003366;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.625rem;
+}
+
+.content-block a:hover {
+    text-decoration: underline;
+}
+
+.help {
+    background: #f4f4f4;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+.help h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #003366;
+}
+
+.help-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.help-option {
+    flex: 1;
+    padding: 1.25rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.help-option a {
+    display: block;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 0.313rem;
+    text-decoration: none;
+}
+
+.help-option a:hover {
+    color: #6cbf39;
+}
+
+footer {
+    background: #e9f2f9;
+    color: #003366;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.625rem;
+}
+
+footer nav a {
+    color: #003366;
+    margin: 0 0.938rem;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #6cbf39;
+}
+
+footer p {
+    color: #003366;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1300px) {
+
+    header,
+    main,
+    footer {
+        padding: 0 1.25rem;
+    }
+}
+
+@media (max-width: 800px) {
+    header .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .top-bar a {
+        width: 100%;
+        text-align: center;
+        padding: 0.625rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.625rem 0;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 0.625rem;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+        margin: 0.625rem 0;
+    }
+
+    .content-inner {
+        flex-direction: column;
+    }
+
+    .content-inner img {
+        max-width: 100%;
+        margin: 0 0 1.25rem 0;
+    }
+
+    .help-options {
+        flex-direction: column;
+    }
+
+    .help-option {
+        width: 100%;
+        margin: 0.625rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    main,
+    footer {
+        padding: 0 0.625rem;
+    }
+}

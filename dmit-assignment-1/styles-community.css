@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header .top-bar {
+    display: flex;
+    justify-content: center;
+    background: #003366;
+    padding: 0.625rem 0;
+}
+
+header .top-bar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+    display: inline-block;
+}
+
+header .top-bar a:hover,
+header .top-bar a.active {
+    background: #6cbf39;
+    color: #003366;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 1.25rem 1.25rem;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #003366;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    padding: 0.625rem 0.938rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #6cbf39;
+    border-bottom: 0.125rem solid #6cbf39;
+}
+
+.community {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.community img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #003366;
+}
+
+.content p {
+    max-width: 800px;
+    margin: 1rem auto;
+    color: #333;
+}
+
+.community-links {
+    display: flex;
+    padding: 2rem;
+}
+
+.community-item {
+    flex: 1;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.community-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.community-item a {
+    display: block;
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.community-item a:hover {
+    background: #6cbf39;
+    color: #003366;
+}
+
+.transparent-box-link {
+    background: url('img/building-stronger.png') no-repeat center center;
+    background-size: cover;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.transparent-box {
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.transparent-box h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: #003366;
+}
+
+.transparent-box p {
+    margin: 1rem 0;
+    color: #003366;
+}
+
+.transparent-box a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.transparent-box a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #e9f2f9;
+    color: #003366;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.625rem;
+}
+
+footer nav a {
+    color: #003366;
+    margin: 0 0.938rem;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #6cbf39;
+}
+
+footer p {
+    color: #003366;
+    margin: 0;
+    padding: 0;
+}
